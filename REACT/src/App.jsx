@@ -11,6 +11,7 @@ import Hooks from './pages/Hooks';
 import State from './hooks/State'; 
 import { Route,Routes } from 'react-router-dom';
 import Effects from './hooks/Effects';
+import SignUp from './pages/SignUp';
 
 const App = () => {
   const fruits = ['Cucumber', 'Mango', 'Grapes'];
@@ -46,6 +47,7 @@ const App = () => {
             <Route path='/hooks' element={<Hooks />}></Route>
             <Route path='/state' element={<State />}></Route>
              <Route path='/effects' element={<Effects />}></Route>
+             <Route path='/signup' element={<SignUp />}></Route>
 </Routes>
     </div>
   )

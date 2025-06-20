@@ -13,6 +13,7 @@ const Navbar = () => {
            <Link to ='/child' className='Link'>Child</Link>
            <Link to ='/counter' className='Link'>Counter</Link>
            <Link to ='/hooks' className='Link'>Hooks</Link>
+           <Link to ='/signup' className='Link'>SignUp</Link>
         </nav>
     </div>
   )
