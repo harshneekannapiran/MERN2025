@@ -20,10 +20,10 @@ const SignUp = () => {
       return;
     }
 
-    // Simulate form submission (e.g. API call)
+
     console.log('SignUp data:', formData);
 
-    // Clear form
+
     setFormData({
       name: '',
       email: '',
