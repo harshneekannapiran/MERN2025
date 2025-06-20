@@ -6,12 +6,13 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Counter from './component/Counter';
 import Login from './pages/Login';
+import Navbar from './component/Navbar';
 
 const App = () => {
   const fruits = ['Cucumber', 'Mango', 'Grapes'];
 
   return (
-    <div>
+   /*<div>
       <Child name="harsh" ph="9874568012" dept="IT" />
       <Child name="elaks" ph="9123468001" dept="House Wife" />
       <Home items={fruits} />
@@ -20,7 +21,8 @@ const App = () => {
       <About />
       <Counter />
       <Login/>
-    </div>
+    </div>*/
+    <div><Navbar/></div>
   )
 }
 
