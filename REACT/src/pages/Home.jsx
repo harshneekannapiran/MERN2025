@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = ({items}) => {
+const Home = ({items,user}) => {
   return (
     <div>
       <ol>
@@ -8,6 +8,8 @@ const Home = ({items}) => {
         items.map((fruits)=>(<li>{fruits}</li>))
         }
       </ol>
+      <h2>{user.username}</h2>
+      <h2>{user.password}</h2>
     </div>
   )
 }
