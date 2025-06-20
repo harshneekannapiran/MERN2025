@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    background-color:darkcyan;
+    background-color:rgb(182, 193, 82);
     padding:10px;
     justify-content:space-between;
 
@@ -8,13 +8,13 @@
 .Link{
     list-style:none;
     text-decoration: none;
-    background-color:rgb(107, 184, 180);
+    background-color:rgb(140, 150, 49);
     padding:5px;
     justify-content: space-around;
-    border: 2px solid lightseagreen;
-    border-radius: 2px;
+    border: 2px solid rgb(140, 150, 49);
+    border-radius: 10px;
     color: beige;
 }
 .Link:hover{
-    background-color:mediumturquoise;
+    background-color:rgb(102, 110, 30);
 }

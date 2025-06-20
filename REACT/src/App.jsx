@@ -7,7 +7,10 @@ import About from './pages/About';
 import Counter from './component/Counter';
 import Login from './pages/Login';
 import Navbar from './component/Navbar';
+import Hooks from './pages/Hooks';
+import State from './hooks/State'; 
 import { Route,Routes } from 'react-router-dom';
+import Effects from './hooks/Effects';
 
 const App = () => {
   const fruits = ['Cucumber', 'Mango', 'Grapes'];
@@ -40,6 +43,9 @@ const App = () => {
 />
            <Route path='/login' element={<Login />}></Route>
             <Route path='/counter' element={<Counter />}></Route>
+            <Route path='/hooks' element={<Hooks />}></Route>
+            <Route path='/state' element={<State />}></Route>
+             <Route path='/effects' element={<Effects />}></Route>
 </Routes>
     </div>
   )
