@@ -1,16 +1,12 @@
-import React from 'react'
-
-const Home = ({items,user}) => {
+import React from 'react';
+import About from './About';
+import flower from '../assets/flower.jpg'
+const Home = ({items,users}) => {
   return (
     <div>
-      <ol>
-        {
-        items.map((fruits)=>(<li>{fruits}</li>))
-        }
-      </ol>
-      <h2>{user.username}</h2>
-      <h2>{user.password}</h2>
-    </div>
+           <About items={items} users={users}/>
+            <img src={flower} alt="flower" />
+            </div>
   )
 }
 

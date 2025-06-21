@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const child = ({name,ph,dept}) => {
   return (

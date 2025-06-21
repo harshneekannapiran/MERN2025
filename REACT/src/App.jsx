@@ -12,7 +12,8 @@ import State from './hooks/State';
 import { Route,Routes } from 'react-router-dom';
 import Effects from './hooks/Effects';
 import SignUp from './pages/SignUp';
-
+import Ref from './hooks/Ref';
+import Reducer from './hooks/Reducer';
 const App = () => {
   const fruits = ['Cucumber', 'Mango', 'Grapes'];
    var users ={username:"Harsh",password:"12345"}
@@ -29,8 +30,8 @@ const App = () => {
 <div>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home items={fruits} user={users}/>}></Route>
-         <Route path='/about' element={<About />}></Route>
+        <Route path='/' element={<Home items={fruits} users={users}/>}></Route>
+         <Route path='/about' element={<About  items={fruits} users={users}/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
            <Route path='/skills' element={<Skills />}></Route>
            <Route
@@ -48,6 +49,8 @@ const App = () => {
             <Route path='/state' element={<State />}></Route>
              <Route path='/effects' element={<Effects />}></Route>
              <Route path='/signup' element={<SignUp />}></Route>
+             <Route path='/ref' element={<Ref />}></Route>
+              <Route path='/reducer' element={<Reducer />}></Route>
 </Routes>
     </div>
   )
