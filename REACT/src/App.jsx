@@ -14,6 +14,7 @@ import Effects from './hooks/Effects';
 import SignUp from './pages/SignUp';
 import Ref from './hooks/Ref';
 import Reducer from './hooks/Reducer';
+import Todo from './component/Todo';
 const App = () => {
   const fruits = ['Cucumber', 'Mango', 'Grapes'];
    var users ={username:"Harsh",password:"12345"}
@@ -51,6 +52,7 @@ const App = () => {
              <Route path='/signup' element={<SignUp />}></Route>
              <Route path='/ref' element={<Ref />}></Route>
               <Route path='/reducer' element={<Reducer />}></Route>
+               <Route path='/todo' element={<Todo/>}></Route>
 </Routes>
     </div>
   )
