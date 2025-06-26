@@ -6,7 +6,6 @@ const Todo = () => {
     const [todo, setTodo] = useState([])
     const [editing, setediting] = useState(null)
     const api = 'https://mern2025-nquf.onrender.com'
-
     const fetchTodo = async () => {
         const response = await axios.get(`${api}/todo/get`);
         console.log(response.data);
@@ -15,7 +14,6 @@ const Todo = () => {
     useEffect(() => {
         fetchTodo()
     }, []);
-
     const handleAddOREdit = async (e) => {
         e.preventDefault();
         if (editing) {
